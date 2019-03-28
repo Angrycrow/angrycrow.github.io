@@ -1,5 +1,5 @@
 ---
 title: Ben Nix-Bradley
-layout: none
+layout: default
 ---
 
