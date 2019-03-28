@@ -1,6 +1,5 @@
 ---
 title: Ben Nix-Bradley
-layout: default
+layout: none
 ---
 
-Learn about it! 
