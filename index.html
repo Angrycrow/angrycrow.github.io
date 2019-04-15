@@ -10,12 +10,22 @@
     <meta name="msapplication-square150x150logo" content="favicon-270.png"/>
     <meta name="msapplication-TileImage" content="favicon-270.png"/>
     <meta name="msapplication-config" content="none"/>
+    <!-- HTTPS redirect..because I hate typing it -->
+    <script>
+        var host = "nixbradley.com";
+        if ( window.location.host == host && window.location.protocol != "https:")
+        {
+            window.location.protocol = "https:";
+        }
+    </script>
+    <!-- p5 script includes  -->
+    <script src="p5/p5.min.js"></script>
+    <script src="p5/addons/p5.dom.min.js"></script>
+    <script src="p5/addons/p5.sound.min.js"></script>
+    <script src="home.js"></script>
 </head>
 <body bgcolor="#96976e">
-<script src="p5/p5.min.js"></script>
-<script src="p5/addons/p5.dom.min.js"></script>
-<script src="p5/addons/p5.sound.min.js"></script>
-<script src="home.js"></script>
+
 
 </body>
 </html>
