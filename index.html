@@ -12,7 +12,11 @@
     <meta name="msapplication-config" content="none"/>
     <!-- HTTPS redirect..because I hate typing it -->
     <script>
-        window.location.protocol = "https:"; 
+        var host = "nixbradley.com";
+        if ( window.location.host == host && window.location.protocol == "http:")
+        {
+            window.location.protocol = "https:";
+        }
     </script>
     <!-- p5 script includes  -->
     <script src="p5/p5.min.js"></script>
