@@ -15,8 +15,8 @@ function setup()
     createCanvas(windowWidth,windowHeight); 
     
     // font configuration
-    fill('#FFFFFF');
-    textFont(plainFont);
+    fill('#556B2F');
+    textFont(plainFont)
     textSize(50);
     text("Ben Nix-Bradley", windowWidth/2, windowHeight/2); 
 
@@ -25,6 +25,7 @@ function setup()
 
 function draw()
 {
+    noFill();
+    stroke(1);
     ellipse(mouseX, mouseY, 80, 80);
-    
 }
