@@ -18,14 +18,12 @@ function setup()
     fill('#556B2F');
     textFont(plainFont)
     textSize(50);
-    text("Ben Nix-Bradley", windowWidth/2, windowHeight/2); 
+    text("Ben Nix-Bradley - Under Construction", windowWidth/2, windowHeight/2); 
 
 
 }
 
 function draw()
 {
-    noFill();
-    stroke(1);
-    ellipse(mouseX, mouseY, 80, 80);
+    
 }
