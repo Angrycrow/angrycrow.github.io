@@ -18,7 +18,9 @@ function setup()
     fill('#556B2F');
     textFont(plainFont)
     textSize(50);
-    text("Ben Nix-Bradley \n- Under Construction", 20, 20); 
+    name = text("Ben Nix-Bradley", 20, 20);
+    status = text("Under Construction", 20, 100); 
+    
 
 
 }
