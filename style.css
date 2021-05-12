@@ -11,6 +11,10 @@ div{
     margin: 1%; 
 }
 
+#movie_player > div.ytp-chrome-top.ytp-show-cards-title{
+    display: none; 
+}
+
 details{
     border: darkolivegreen;
     border-bottom-style: dashed;
@@ -19,6 +23,6 @@ details{
 }
 
 summary{
-    margin: 1%;
+    margin: 5%;
     
 }
