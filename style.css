@@ -3,20 +3,22 @@ body{
     text-align: block;
     color: rgb(15, 37, 24);
     font-family: 'Press Start 2P', cursive;
+    line-height: 1.5; 
     margin: 10%;
 }
 
 div{
-    margin: 5%; 
+    margin: 1%; 
 }
 
 details{
     border: darkolivegreen;
     border-bottom-style: dashed;
-    border-bottom-width: 1em;
+    border-bottom-width: 3%; 
 
 }
 
 summary{
-    margin: 5%;
+    margin: 1%;
+    
 }
