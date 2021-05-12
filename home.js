@@ -1,8 +1,10 @@
+
 import anime from'libs/anime.min.js';
 
-var elements = document.querySelectorAll('.dom-node-demo .el');
+
+var elements = document.querySelectorAll('div');
 
 anime({
-  targets: elements,
+  targets: div,
   translateX: 270
 });
