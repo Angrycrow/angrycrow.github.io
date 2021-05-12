@@ -10,6 +10,13 @@ div{
     margin: 5%; 
 }
 
+details{
+    border: darkolivegreen;
+    border-bottom-style: dashed;
+    border-bottom-width: 1em;
+
+}
+
 summary{
-    margin: 10%;
+    margin: 5%;
 }
