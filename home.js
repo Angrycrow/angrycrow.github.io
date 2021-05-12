@@ -1,18 +1,8 @@
-// home 
-function preload()
-{
+import anime from'libs/anime.min.js';
 
-}
+var elements = document.querySelectorAll('.dom-node-demo .el');
 
-
-function setup() {
-
-   
-  }
-  
-  function draw() {
-
-
-
-  }
-
+anime({
+  targets: elements,
+  translateX: 270
+});

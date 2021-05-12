@@ -1,0 +1,14 @@
+body{
+    text-align: block;
+    color: rgb(15, 37, 24);
+    font-family: 'Press Start 2P', cursive;
+    margin: 10%;
+}
+
+div{
+    margin: 10%; 
+}
+
+summary{
+    margin: 10%;
+}
