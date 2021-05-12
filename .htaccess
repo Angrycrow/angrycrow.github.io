@@ -1,6 +1,3 @@
 RewriteEngine On 
 RewriteCond %{HTTPS} off 
 RewriteRule (.*) https://www.nixbradley.com%{REQUEST_URI}
-RewriteEngine On 
-RewriteCond %{HTTPS} off 
-RewriteRule (.*) https://nixbradley.com%{REQUEST_URI}
