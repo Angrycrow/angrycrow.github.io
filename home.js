@@ -1,10 +1,10 @@
 
-import anime from'libs/anime.min.js';
+// import anime from'libs/anime.min.js';
 
 
-var elements = document.querySelectorAll('div');
+// var elements = document.querySelectorAll('div');
 
-anime({
-  targets: div,
-  translateX: 270
-});
+// anime({
+//   targets: div,
+//   translateX: 270
+// });

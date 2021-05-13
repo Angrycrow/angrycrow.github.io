@@ -1,28 +1,35 @@
 body{
     display: grid; 
-    text-align: block;
-    color: rgb(15, 37, 24);
+    text-shadow:2px 2px rgba(0, 0, 0, 0.219); 
+    text-align: left;
+    color: rgb(15, 41, 26);
     font-family: 'Press Start 2P', cursive;
     line-height: 1.5; 
-    margin: 10%;
+    margin: 5%;
+}
+
+h1{
+    font-size: 2em; 
+    margin:0; 
 }
 
 div{
-    margin: 1%; 
+    margin: 3%; 
 }
 
-#movie_player > div.ytp-chrome-top.ytp-show-cards-title{
-    display: none; 
+summary{
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.219));
 }
 
 details{
     border: darkolivegreen;
     border-bottom-style: dashed;
     border-bottom-width: 3%; 
-
+    border-spacing: 1em;
+    border-top-width: 10em; 
+    user-select: none;
 }
 
-summary{
-    margin: 5%;
-    
+p{
+    margin-left: 5%; 
 }
