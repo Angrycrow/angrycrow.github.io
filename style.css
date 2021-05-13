@@ -12,24 +12,24 @@ h1{
     font-size: 2em; 
     margin:0; 
 }
+summary {
 
-div{
-    margin: 3%; 
-}
-
-summary{
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.219));
-}
+    border: 2px solid transparent;
+    outline: none;
+  }
 
 details{
     border: darkolivegreen;
+    outline: none; 
     border-bottom-style: dashed;
+    border-bottom: 10%;
     border-bottom-width: 3%; 
     border-spacing: 1em;
     border-top-width: 10em; 
     user-select: none;
 }
 
-p{
-    margin-left: 5%; 
-}
+  p {
+    margin: 0;
+    padding-bottom: 10px;
+  }
