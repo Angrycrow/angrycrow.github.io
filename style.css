@@ -8,14 +8,15 @@ body{
   color: rgb(15, 41, 26);
   font-family: 'Press Start 2P', cursive;
   line-height: 1.5; 
-  margin: 3rem;
+  margin: 5rem;
+  margin-top:3rem; 
   max-width: 75rem;
 }
 
 
 /* General Content */
 h1{
-  font-size: 3em; 
+  font-size: 2rem; 
   margin:0; 
 }
 summary {
@@ -31,14 +32,17 @@ width: 100%;
 
 
 body > details:nth-child(4) > div > iframe:nth-child(1){
-  margin-left: 3rem; 
+  /* margin-left: 3rem;  */
+padding-left:3rem; 
 }
 body > details:nth-child(4) > div > iframe.media{
-  margin-left: 3rem; 
+  /* margin-left: 3rem;  */
+padding-left:3rem; 
 }
 
 body > details:nth-child(4) > div > iframe:nth-child(5){
-  margin-left: 3rem; 
+  /* margin-left: 3rem;  */
+  padding-left:3rem; 
 }
 
 details{
@@ -53,7 +57,7 @@ details{
 }
 
 footer{
-font-size: 0.5rem; 
+font-size: 0.75rem; 
 text-align:center;
 padding: 1rem; 
 left:0;
