@@ -9,44 +9,55 @@ body{
   font-family: 'Press Start 2P', cursive;
   line-height: 1.5; 
   margin: 5rem;
-  margin-top:3rem; 
-  max-width: 75rem;
+  margin-top:3rem;  
+  max-width: 75rem; 
+  background-color:"#96976f";
+}
+a{
+  line-height: 2;
 }
 
+a:link{
+  color: rgb(15, 41, 26);
+}
+a:visited{
+  color: rgb(15, 41, 26);
+}
+a:hover{
+  color:olivedrab;
+}
 
 /* General Content */
 h1{
   font-size: 2rem; 
   margin:0; 
 }
+
 summary {
-  /* display: flex;  */
   border: 2px solid transparent;
   outline: none;
   padding-bottom: 1rem; 
 }
 
-summary>div{
-width: 100%; 
-}
-
-
 body > details:nth-child(4) > div > iframe:nth-child(1){
   /* margin-left: 3rem;  */
-padding-left:3rem; 
+padding-left:2.25rem; 
+align-content: center;
 }
 body > details:nth-child(4) > div > iframe.media{
   /* margin-left: 3rem;  */
-padding-left:3rem; 
+padding-left:2.25rem; 
+align-content: center;
 }
 
 body > details:nth-child(4) > div > iframe:nth-child(5){
   /* margin-left: 3rem;  */
-  padding-left:3rem; 
+  padding-left:2.25rem; 
+  align-self: right;
 }
 
 details{
-  align-content: flex-end;
+  display: flexbox;
   margin: 1rem; 
   margin-bottom:0; 
   border: darkolivegreen;
