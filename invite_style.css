@@ -1,19 +1,23 @@
 
 
 body{
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Charm', cursive;
     text-align: justify; 
-    margin-left: 30%; 
-    margin-right: 30%; 
+    margin-left: 15%; 
+    margin-right: 15%; 
     align-content: center; 
-    fill: blanchedalmond; 
-    font-size: 1em; 
+    background-color: blanchedalmond;
+    font-size: 1.5em; 
 }
 a{
     font-size: 2em; 
     margin-left: 20%;
     margin-right: 10%; 
 
+}
+
+h1{
+    font-size: 2em; 
 }
 
 a:link{
