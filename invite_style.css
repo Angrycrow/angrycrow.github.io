@@ -1,3 +1,28 @@
+
+
 body{
+    font-family: 'Berkshire Swash', cursive;
+    text-align: justify; 
+    margin-left: 30%; 
+    margin-right: 30%; 
     align-content: center; 
+    fill: blanchedalmond; 
+    font-size: 1em; 
 }
+a{
+    font-size: 2em; 
+    margin-left: 20%;
+    margin-right: 10%; 
+
+}
+
+a:link{
+    color: rgb(15, 41, 26);
+  }
+  a:visited{
+    color: rgb(15, 41, 26);
+  }
+  a:hover{
+    color:olivedrab;
+  }
+
