@@ -3,16 +3,17 @@
 body{
     font-family: 'Charm', cursive;
     text-align: justify; 
-    margin-left: 15%; 
-    margin-right: 15%; 
+    margin-left: 2em; 
+    margin-right: 2em; 
     align-content: center; 
     background-color: blanchedalmond;
     font-size: 1.5em; 
+    max-width: 80%;
 }
 a{
     font-size: 2em; 
     margin-left: 20%;
-    margin-right: 10%; 
+    margin-right: 20%; 
 }
 
 h1{
