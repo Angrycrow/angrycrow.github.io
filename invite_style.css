@@ -24,12 +24,12 @@ h1{
 }
 
 a:link{
-    color: rgb(15, 41, 26);
+    color: rgb(153, 91, 50);
   }
   a:visited{
-    color: rgb(15, 41, 26);
+    color: rgb(134, 87, 25);
   }
   a:hover{
-    color:olivedrab;
+    color:burlywood;
   }
 
