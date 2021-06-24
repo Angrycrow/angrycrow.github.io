@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Charm', cursive;
-    text-align: justify; 
+    text-align: left; 
     margin-left: 2em; 
     margin-right: 2em; 
     align-content: center; 
@@ -12,8 +12,8 @@ body{
 }
 a{
     font-size: 2em; 
-    margin-left: 20%;
-    margin-right: 20%; 
+    /* margin-left: 20%;
+    margin-right: 20%;  */
 }
 p{
     margin-left:1em;
