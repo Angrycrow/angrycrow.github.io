@@ -23,6 +23,11 @@ h1{
     font-size: 2em; 
 }
 
+a.call{
+    text-align: right; 
+    margin: 40%; 
+}
+
 a:link{
     color: rgb(153, 91, 50);
   }
