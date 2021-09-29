@@ -1,11 +1,11 @@
 /* regular style... style.  */
 body{
   margin-top: 3rem; 
-  align-content: flex-start;
+  align-content: grid; 
   display: grid; 
   text-shadow:2px 2px rgba(0, 0, 0, 0.219); 
   text-align: block;
-  color: rgb(15, 41, 26);
+  color: #0f291a;
   font-family: 'Press Start 2P', cursive;
   line-height: 1.5; 
   margin: 5rem;
@@ -81,3 +81,12 @@ margin: 0;
 padding-bottom: 10px;
 }
 
+.media {
+
+  grid-auto-flow: dense; 
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
