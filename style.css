@@ -1,20 +1,24 @@
 /* regular style... style.  */
+
 body{
-  margin-top: 3rem; 
-  align-content: grid; 
-  display: grid; 
+  margin-top: 1rem; 
   text-shadow:2px 2px #00000038; 
   text-align: block;
   color: #0f291a;
   font-family: 'Press Start 2P', cursive;
   line-height: 1.5; 
-  margin: 5rem;
-  margin-top:3rem;  
-  max-width: 75rem; 
+  margin: 2rem;
+  margin-top:0rem;  
+  max-width: 100rem; 
   background-color:"#96976f";
 }
-a{
-  line-height: 2;
+
+a.contact{
+  line-height: 3;
+  margin-left: 10rem; 
+  text-emphasis: block;
+  block-size: 4rem; 
+
 }
 
 a:link{
@@ -28,68 +32,66 @@ a:hover{
 }
 
 details.showcase{
-  grid: 10%; 
+  grid-auto-flow: dense;
+  /* padding-bottom: 2rem;  */
 }
+
 /* General Content */
 h1{
   font-size: 2rem; 
-  margin:0; 
+  margin-top:1rem; 
+  margin-bottom:0rem;
 }
 
 summary {
-  border: 2px solid transparent;
+  border: 0.25rem solid transparent; 
   outline: none;
-  padding-bottom: 1rem; 
 }
 
 body > details:nth-child(4) > div > iframe:nth-child(1){
-  /* margin-left: 3rem;  */
-padding-left:2.25rem; 
-align-content: center;
+  margin-left: 3rem; 
 }
+
 body > details:nth-child(4) > div > iframe.media{
-  /* margin-left: 3rem;  */
-padding-left:2.25rem; 
-align-content: center;
+  margin-left: 3rem; 
 }
 
 body > details:nth-child(4) > div > iframe:nth-child(5){
-  /* margin-left: 3rem;  */
-  padding-left:2.25rem; 
-  align-self: right;
+  margin-left: 3rem; 
 }
 
 details{
   display: flexbox;
   margin: 1rem; 
-  margin-bottom:0; 
+  margin-bottom:1rem; 
   border: darkolivegreen;
   outline: none; 
   border-bottom-style: dashed;
   border-top-width: 5em; 
-  user-select: none;
 }
 
-footer{
-font-size: 0.75rem; 
-text-align:center;
-padding: 1rem; 
-left:0;
-bottom:0; 
-width:100%; 
+footer {
+  font-size: 0.75rem; 
+  text-align:center;
+  padding: 1rem; 
 }
 
 p {
-margin: 0;
-padding-bottom: 10px;
+  /* grid: 2em; */
+  margin-left: 2rem; 
+  margin-top: 1rem; 
+  margin-right: 2rem; 
+  margin-bottom: 1rem; 
+  }
+
+table {
+  margin-left: 2rem; 
+  margin-top: 1rem; 
+  margin-right: 2rem; 
+  margin-bottom: 1rem; 
 }
 
-.media {
-
-  grid-auto-flow: dense; 
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+body > t {
+  margin-left: 3rem;
+  margin-bottom: 0rem;
 }
