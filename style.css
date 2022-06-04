@@ -17,8 +17,8 @@ a.contact{
   line-height: 3;
   margin-left: 10rem; 
   text-emphasis: block;
+  text-align: center; 
   block-size: 4rem; 
-
 }
 
 a:link{
