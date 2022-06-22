@@ -32,7 +32,7 @@ a:hover{
 }
 
 details.showcase{
-  grid-auto-flow: dense;
+  /* grid-auto-flow */
   /* padding-bottom: 2rem;  */
 }
 
@@ -44,21 +44,11 @@ h1{
 }
 
 summary {
-  border: 0.25rem solid transparent; 
+  border: 0.5rem solid transparent; 
+  box-shadow: #0f291a;
   outline: none;
 }
-/* 
-body > details:nth-child(4) > div > iframe:nth-child(1){
-  margin-left: 3rem; 
-}
 
-body > details:nth-child(4) > div > iframe.media{
-  margin-left: 3rem; 
-}
-
-body > details:nth-child(4) > div > iframe:nth-child(5){
-  margin-left: 3rem; 
-} */
 
 details{
   display: flexbox;
