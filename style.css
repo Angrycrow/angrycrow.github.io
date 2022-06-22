@@ -11,6 +11,9 @@ body{
   margin-top:0rem;  
   max-width: 100rem; 
   background-color:"#96976f";
+  animation-name: intro;
+  animation-duration: 5s; 
+  animation-iteration-count: 1;  
 }
 
 a.contact{
@@ -18,7 +21,7 @@ a.contact{
   margin-left: 10rem; 
   text-emphasis: block;
   text-align: center; 
-  block-size: 4rem; 
+  block-size: 1rem; 
 }
 
 a:link{
@@ -32,8 +35,14 @@ a:hover{
 }
 
 details.showcase{
-  /* grid-auto-flow */
   /* padding-bottom: 2rem;  */
+  align-content: center; 
+}
+
+details{
+  animation-name: intro;
+  animation-duration: 3s; 
+  animation-iteration-count: 1;  
 }
 
 /* General Content */
@@ -41,6 +50,9 @@ h1{
   font-size: 2rem; 
   margin-top:1rem; 
   margin-bottom:0rem;
+  animation-name: intro;
+  animation-duration: 3s; 
+  animation-iteration-count: 1;  
 }
 
 summary {
@@ -48,7 +60,6 @@ summary {
   box-shadow: #0f291a;
   outline: none;
 }
-
 
 details{
   display: flexbox;
@@ -67,7 +78,6 @@ footer {
 }
 
 p {
-  /* grid: 2em; */
   margin-left: 2rem; 
   margin-top: 1rem; 
   margin-right: 2rem; 
@@ -84,4 +94,9 @@ table {
 body > t {
   margin-left: 3rem;
   margin-bottom: 0rem;
+}
+
+@keyframes intro {
+ 0% { color: #96976f; rotate: 0}
+ 100% {color:#0f291a; rotate: 270}; 
 }
