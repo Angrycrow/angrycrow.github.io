@@ -3,7 +3,7 @@
 body{
   margin-top: 1rem; 
   text-shadow:2px 2px #00000038; 
-  text-align: block;
+  text-align: grid;
   color: #0f291a;
   font-family: 'Press Start 2P', cursive;
   line-height: 1.5; 
@@ -11,17 +11,17 @@ body{
   margin-top:0rem;  
   max-width: 100rem; 
   background-color:"#96976f";
-  /* animation-name: intro;
+  animation-name: intro;
   animation-duration: 2s; 
-  animation-iteration-count: 1;   */
+  animation-iteration-count: 1;  
 }
 
 a.contact{
-  line-height: 3;
-  margin-left: 10rem; 
-  text-emphasis: block;
+  line-height: 3rem;
+  margin-left: 1rem;
+  padding-left: 20%; 
   text-align: center; 
-  block-size: 1rem; 
+  /* block-size: 3rem;  */
 }
 
 a:link{
@@ -35,7 +35,7 @@ a:hover{
 }
 
 details.showcase{
-  /* padding-bottom: 2rem;  */
+  padding-bottom: 2rem; 
   align-content: center; 
 }
 
@@ -43,6 +43,10 @@ details{
   animation-name: intro;
   animation-duration: 2s; 
   animation-iteration-count: 1;  
+}
+
+.subtitle{
+  align-self: right; 
 }
 
 /* General Content */
@@ -62,8 +66,9 @@ summary {
 }
 
 details{
-  display: flexbox;
-  margin: 1rem; 
+  display: flow-root; 
+  padding-left: 5%; 
+  /* margin: 1rem;  */
   margin-bottom:1rem; 
   border: darkolivegreen;
   outline: none; 
@@ -71,10 +76,12 @@ details{
   border-top-width: 5em; 
 }
 
+
 footer {
   font-size: 0.75rem; 
   text-align:center;
   padding: 1rem; 
+  text-anchor: end; 
 }
 
 p {
@@ -84,14 +91,37 @@ p {
   margin-bottom: 1rem; 
   }
 
-body > t {
-  margin-left: 3rem;
-  margin-bottom: 0rem;
+p.subtitle{
+  margin-left: 3rem; 
+  padding-left: 10%;
+  text-align: left; 
 }
 
+iframe.media{
+  /* margin-left: 10rem;  */
+  border-bottom-right-radius: 3rem;
+  border-top-right-radius: 3rem;  
+  max-width: 75%;
+  min-width: 30%; 
+  padding-left: 30%; 
+  padding-right: 20%; 
+}
+
+body > t {
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+  animation-timing-function: ease-in;
+}
+
+div.bio{
+  padding-left: 10%; 
+}
+
+
+
 @keyframes intro {
- 0% { color: #96976f; margin-top:10rem}; 
- 75% {color:#0f291a;margin-top:50rem};
+ 0% { color: #96976f; margin-top:50rem}; 
+ 90% { color: #96976f;};
  100% {color:#0f291a;margin-top:1rem}; 
 }
 
