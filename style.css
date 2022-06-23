@@ -18,8 +18,8 @@ body{
 
 a.contact{
   line-height: 3rem;
-  margin-left: 1rem;
-  padding-left: 20%; 
+  margin-left: 15%;
+  margin-right: 5%;  
   text-align: center; 
   /* block-size: 3rem;  */
 }
@@ -52,8 +52,9 @@ details{
 /* General Content */
 h1{
   font-size: 2rem; 
+  padding-top: 10%; 
   margin-top:1rem; 
-  margin-bottom:0rem;
+  margin-bottom:2rem;
   animation-name: intro;
   animation-duration: 2s; 
   animation-iteration-count: 1;  
@@ -80,8 +81,9 @@ details{
 footer {
   font-size: 0.75rem; 
   text-align:center;
-  padding: 1rem; 
-  text-anchor: end; 
+  /* padding-top: 50%; */
+  scroll-padding: 90%; 
+  /* text-anchor: end;  */
 }
 
 p {
