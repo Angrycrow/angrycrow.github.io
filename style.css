@@ -97,6 +97,6 @@ body > t {
 }
 
 @keyframes intro {
- 0% { color: #96976f; rotate: 0}
+ 0% { color: #96976f; top:10rem}; 
  100% {color:#0f291a; rotate: 270}; 
 }
