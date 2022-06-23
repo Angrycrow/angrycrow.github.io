@@ -11,9 +11,9 @@ body{
   margin-top:0rem;  
   max-width: 100rem; 
   background-color:"#96976f";
-  animation-name: intro;
-  animation-duration: 5s; 
-  animation-iteration-count: 1;  
+  /* animation-name: intro;
+  animation-duration: 2s; 
+  animation-iteration-count: 1;   */
 }
 
 a.contact{
@@ -41,7 +41,7 @@ details.showcase{
 
 details{
   animation-name: intro;
-  animation-duration: 3s; 
+  animation-duration: 2s; 
   animation-iteration-count: 1;  
 }
 
@@ -51,7 +51,7 @@ h1{
   margin-top:1rem; 
   margin-bottom:0rem;
   animation-name: intro;
-  animation-duration: 3s; 
+  animation-duration: 2s; 
   animation-iteration-count: 1;  
 }
 
@@ -84,19 +84,14 @@ p {
   margin-bottom: 1rem; 
   }
 
-table {
-  margin-left: 2rem; 
-  margin-top: 1rem; 
-  margin-right: 2rem; 
-  margin-bottom: 1rem; 
-}
-
 body > t {
   margin-left: 3rem;
   margin-bottom: 0rem;
 }
 
 @keyframes intro {
- 0% { color: #96976f; top:10rem}; 
- 100% {color:#0f291a; rotate: 270}; 
+ 0% { color: #96976f; margin-top:10rem}; 
+ 75% {color:#0f291a;margin-top:50rem};
+ 100% {color:#0f291a;margin-top:1rem}; 
 }
+
