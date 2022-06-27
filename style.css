@@ -13,7 +13,8 @@ body{
   background-color:"#96976f";
   animation-name: intro;
   animation-duration: 2s; 
-  animation-iteration-count: 1;  
+  animation-iteration-count: 1; 
+  animation-timing-function: ease-out;
 }
 
 a.contact{
@@ -26,9 +27,11 @@ a.contact{
 a:link{
   color: rgb(15, 41, 26);
 }
+
 a:visited{
   color: rgb(15, 41, 26);
 }
+
 a:hover{
   color:olivedrab;
 }
@@ -36,12 +39,6 @@ a:hover{
 details.showcase{
   padding-bottom: 2rem; 
   align-content: center; 
-}
-
-details{
-  animation-name: intro;
-  animation-duration: 2s; 
-  animation-iteration-count: 1;  
 }
 
 .subtitle{
@@ -52,10 +49,7 @@ details{
 h1{
   font-size: 2rem; 
   margin-top:1rem; 
-  margin-bottom:2rem;
-  animation-name: intro;
-  animation-duration: 2s; 
-  animation-iteration-count: 1;  
+  margin-bottom:2rem; 
 }
 
 summary {
@@ -65,8 +59,6 @@ summary {
 }
 
 details{
-  display: flow-root; 
-  padding-left: 1%; 
   margin-bottom:1rem; 
   border: darkolivegreen;
   outline: none; 
@@ -76,13 +68,19 @@ details{
 
 details[open] summary ~ *{
   animation: sweep .5s ease-in-out; 
+  animation-iteration-count: initial;
+
+}
+@keyframes sweep{
+  0%    {opacity: 0; transform: translateX(-1rem);}
+  100%  {opacity: 1; transform: translateX(0);}
 }
 
 details[close] summary ~ *{
-  animation: sweep .5s ease-in-out; 
+  animation: close .5s ease-in-out; 
 }
-@keyframes sweep{
-  0%    {opacity: 0; transform: translateX(-10px)}
+@keyframes close{
+  0%    {opacity: 0; transform: translateX(10px)}
   100%  {opacity: 1; transform: translateX(0)}
 }
 
@@ -113,17 +111,10 @@ iframe.media{
   padding-right: 20%; 
 }
 
-body > t {
-  margin-left: 1rem;
-  margin-bottom: 0rem;
-  animation-timing-function: ease-in;
-}
-
 
 div.bio{
   padding-left: 10%; 
 }
-
 
 
 @keyframes intro {
