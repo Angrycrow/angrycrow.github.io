@@ -41,7 +41,7 @@ details.showcase{
   align-content: center; 
 }
 
-.subtitle{
+p.subtitle{
   align-self: right; 
 }
 
@@ -67,9 +67,8 @@ details{
 }
 
 details[open] summary ~ *{
-  animation: sweep .5s ease-in-out; 
-  animation-iteration-count: initial;
-
+  animation: sweep .5s ease-out; 
+  animation-iteration-count: 1;
 }
 @keyframes sweep{
   0%    {opacity: 0; transform: translateX(-1rem);}
@@ -109,11 +108,6 @@ iframe.media{
   min-width: 30%; 
   padding-left: 10%; 
   padding-right: 20%; 
-}
-
-
-div.bio{
-  padding-left: 10%; 
 }
 
 
