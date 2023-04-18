@@ -1,4 +1,8 @@
 /* regular style... style.  */
+head.title{
+  position: fixed;
+  mix-blend-mode: multiply;
+}
 
 body{
   margin-top: 1rem; 
