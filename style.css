@@ -108,9 +108,9 @@ p.subtitle{
 }
 
 iframe.media{  
-  max-width: 100%;
-  min-width: 30%; 
-  padding-left: 10%; 
+  max-width: 5rem;
+  min-width: 0%; 
+  padding-left: 0%; 
   padding-right: 20%; 
 }
 
