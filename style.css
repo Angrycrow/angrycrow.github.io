@@ -21,11 +21,14 @@ body{
   animation-timing-function: ease-out;
 }
 
+div.contact{
+  padding-left: 10%;
+  padding-bottom: 1rem;
+}
 a.contact{
+  padding: 5%;
+  margin: 3rem;
   line-height: 3rem;
-  margin-left: 15%;
-  margin-right: 5%;  
-  text-align: center; 
 }
 
 a:link{
@@ -74,14 +77,23 @@ details[open] summary ~ *{
   animation: sweep .5s ease-out; 
   animation-iteration-count: 1;
 }
+
+details[close] summary ~ *{
+  animation: close .5s ease-in; 
+}
+
+@keyframes intro {
+  0% { color: #96976f; margin-top:50%}; 
+  90% { color: #96976f;};
+  100% {color:#0f291a;margin-top:1rem}; 
+ }
+ 
 @keyframes sweep{
   0%    {opacity: 0; transform: translateX(-1rem);}
   100%  {opacity: 1; transform: translateX(0);}
 }
 
-details[close] summary ~ *{
-  animation: close .5s ease-in-out; 
-}
+
 @keyframes close{
   0%    {opacity: 0; transform: translateX(10px)}
   100%  {opacity: 1; transform: translateX(0)}
@@ -102,22 +114,23 @@ p {
   }
 
 p.subtitle{
-  margin-left: 3rem; 
-  padding-left: 10%;
+  margin-left: 1rem; 
+  padding-left: 0%;
   text-align: left; 
 }
 
 iframe.media{  
-  max-width: 5rem;
+  max-width: 100%;
   min-width: 0%; 
   padding-left: 0%; 
   padding-right: 20%; 
 }
 
-
-@keyframes intro {
- 0% { color: #96976f; margin-top:50%}; 
- 90% { color: #96976f;};
- 100% {color:#0f291a;margin-top:1rem}; 
+p.bandcamp{
+  align-self: right; 
+  align-items: center;
+  padding: 3rem;
+  border-radius: 10px;
 }
+
 
