@@ -127,8 +127,6 @@ iframe.media{
 }
 
 p.bandcamp{
-  align-self: right; 
   align-items: center;
-  padding: 3rem;
   border-radius: 10px;
 }
