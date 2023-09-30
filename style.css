@@ -9,7 +9,7 @@ body{
   text-shadow:2px 2px #00000038; 
   text-align: grid;
   color: #0f291a;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P',monospace;
   line-height: 1.5; 
   margin: 2rem;
   margin-top:0rem;  
@@ -133,4 +133,5 @@ iframe.media{
 p.bandcamp{
   align-items: center;
   border-radius: 10px;
+  grid-auto-columns: auto;
 }
