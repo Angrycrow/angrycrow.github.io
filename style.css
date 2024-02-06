@@ -17,7 +17,8 @@ body{
   overflow-x: hidden; 
   background-color:"#96976f";
   animation-name: intro;
-  animation-duration: 2s; 
+  animation-delay: 0.5s;
+  animation-duration: 1.5s; 
   animation-iteration-count: 1; 
   animation-timing-function: ease-out;
 }
