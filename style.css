@@ -4,8 +4,13 @@ head.title{
   mix-blend-mode: multiply;
 }
 
+div.bio{
+  font-size: large;
+  font-weight: 500;
+}
+
 body{
-  margin-top: 1rem; 
+  margin-top:1rem; 
   text-shadow:2px 2px #00000038; 
   text-align: grid;
   color: #0f291a;
