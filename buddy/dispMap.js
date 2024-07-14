@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 5%;
-      }
-    </style>
-  </head>
-  <body>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlVqyg56L44O1wJ4yb9lSdX0RZ9YxJ-vc&callback=initMap"
-    async defer></script>
-    <div id="map"></div>
-    <script>
-
-    // Basic map display stuff.
-
-    let map, infoWindow;
-    function initMap() 
-    {
-        map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 34.220, lng: -118.524},
-        zoom: 13
-        });
-    }
 
     // Creates button in top center. 
     const locationButton = document.createElement("button");
@@ -75,8 +39,3 @@
         );
         infoWindow.open(map);
     }
-
-    </script>
-
-  </body>
-</html>
