@@ -3,9 +3,9 @@ let map;
 let poly; 
 let infoWindow; 
 
-function initMap() 
+async function initMap() 
 {
-    const map = new google.maps.Map(document.getElementById('map'), 
+    map = new google.maps.Map(document.getElementById('map'), 
     {
         center: {lat: 34.233, lng: -118.578},
         zoom: 17,
@@ -21,12 +21,12 @@ function initMap()
         
     // Creates button in top center. 
     const locationButton = document.createElement("button");
-    const infoWindow = new google.maps.InfoWindow(); 
+    infoWindow = new google.maps.InfoWindow(); 
     locationButton.textContent = "Pan to Current Location";
     locationButton.classList.add("custom-map-control-button");
 
     poly = new google.maps.Polyline({
-        strokeColor: "#000000",
+        strokeColor: "#FFAAFF",
         strokeOpacity: 1.0,
         strokeWeight: 3,
       });
@@ -49,7 +49,7 @@ function initMap()
 
                 infoWindow.setPosition(pos);
                 infoWindow.setContent("Location found.");
-                infoWindow.open(map);
+                infoWindow.open(map,pos);
                 map.setCenter(pos);
             },
             () => {
@@ -71,22 +71,26 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos)
         ? "Error: The Geolocation service failed."
         : "Error: Your browser doesn't support geolocation.",
     );
-    infoWindow.open(map);
+    infoWindow.open(map,pos);
 }
 
 // Handles click events on a map, and adds a new point to the Polyline.
 function addLatLng(event) {
     const path = poly.getPath();
-  
+
     // Because path is an MVCArray, we can simply append a new coordinate
     // and it will automatically appear.
     path.push(event.latLng);
-    // Add a new marker at the new plotted point on the polyline.
-    new google.maps.Marker({
-      position: event.latLng,
-      title: "#" + path.getLength(),
-      map: map,
+
+    // Create a new marker instance
+    const marker = new google.maps.Marker({
+        position: event.latLng,
+        title: "#" + path.getLength(),
+        map: map,
     });
-  }
+
+    // Add the marker to the map
+    marker.setMap(map);
+}
   
   window.initMap = initMap;
