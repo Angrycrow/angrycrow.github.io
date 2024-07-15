@@ -1,3 +1,7 @@
+//// @ts-nocheck
+// dispMap.js
+window.initMap = initMap;
+
 // Basic map display stuff.
 let map;
 let poly; 
@@ -14,11 +18,12 @@ async function initMap()
         zoomControl: true,
         mapTypeControl: false,
         scaleControl: true,
-        streetViewControl: true,
+        streetViewControl: false,
         rotateControl: true,
         fullscreenControl: false
     });
         
+
     // Need this for later. 
     infoWindow = new google.maps.InfoWindow(); 
 
@@ -32,6 +37,9 @@ async function initMap()
         strokeColor: "#FFAAFF",
         strokeOpacity: 1.0,
         strokeWeight: 3,
+        draggable: true,
+        editable: true,
+        map: map
       });
       poly.setMap(map);
       // Add a listener for the click event
@@ -90,10 +98,19 @@ function addLatLng(event) {
         position: event.latLng,
         title: "#" + path.getLength(),
         map: map,
+        draggable: true,
     });
 
     // Add the marker to the map
     marker.setMap(map);
+}
+
+function startShape(event){
+
+}
+
+function endShape(event){
+
 }
   
   window.initMap = initMap;
