@@ -1,7 +1,5 @@
 //// @ts-nocheck
 // dispMap.js
-require('dotenv').config();
-
 
 // Basic map display stuff.
 let map;
