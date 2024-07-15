@@ -1,5 +1,7 @@
 // Basic map display stuff.
-
+let map;
+let poly; 
+let infoWindow; 
 
 function initMap() 
 {
@@ -22,6 +24,15 @@ function initMap()
     const infoWindow = new google.maps.InfoWindow(); 
     locationButton.textContent = "Pan to Current Location";
     locationButton.classList.add("custom-map-control-button");
+
+    poly = new google.maps.Polyline({
+        strokeColor: "#000000",
+        strokeOpacity: 1.0,
+        strokeWeight: 3,
+      });
+      poly.setMap(map);
+      // Add a listener for the click event
+      map.addListener("click", addLatLng);
 
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
     // Scroll to user location. 
@@ -63,3 +74,19 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos)
     infoWindow.open(map);
 }
 
+// Handles click events on a map, and adds a new point to the Polyline.
+function addLatLng(event) {
+    const path = poly.getPath();
+  
+    // Because path is an MVCArray, we can simply append a new coordinate
+    // and it will automatically appear.
+    path.push(event.latLng);
+    // Add a new marker at the new plotted point on the polyline.
+    new google.maps.Marker({
+      position: event.latLng,
+      title: "#" + path.getLength(),
+      map: map,
+    });
+  }
+  
+  window.initMap = initMap;
