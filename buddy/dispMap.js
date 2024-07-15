@@ -19,10 +19,13 @@ async function initMap()
         fullscreenControl: false
     });
         
+    // Need this for later. 
+    infoWindow = new google.maps.InfoWindow(); 
+
     // Creates button in top center. 
     const locationButton = document.createElement("button");
-    infoWindow = new google.maps.InfoWindow(); 
-    locationButton.textContent = "Pan to Current Location";
+    locationButton.textContent = "View Current Location";
+    locationButton.style.fontSize = "20px";
     locationButton.classList.add("custom-map-control-button");
 
     poly = new google.maps.Polyline({
