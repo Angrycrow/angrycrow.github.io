@@ -1,2 +1,6 @@
-.env
+# Ignore build files
 build.js
+index.html
+
+# Ignore environment variables
+.env
