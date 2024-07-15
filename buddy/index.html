@@ -8,7 +8,7 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height:80%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -22,61 +22,7 @@
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlVqyg56L44O1wJ4yb9lSdX0RZ9YxJ-vc&callback=initMap"
     async defer></script>
     <div id="map"></div>
-    <script>
-
-    // Basic map display stuff.
-
-    let map, infoWindow;
-    function initMap() 
-    {
-        map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 34.220, lng: -118.524},
-        zoom: 13
-        });
-    }
-
-    // Creates button in top center. 
-    const locationButton = document.createElement("button");
-    infoWindow = new google.maps.InfoWindow();
-    locationButton.textContent = "Pan to Current Location";
-    locationButton.classList.add("custom-map-control-button");
-    map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-    locationButton.addEventListener("click", () => {
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-        (position) => {
-            const pos = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-            };
-
-            infoWindow.setPosition(pos);
-            infoWindow.setContent("Location found.");
-            infoWindow.open(map);
-            map.setCenter(pos);
-        },
-        () => {
-            handleLocationError(true, infoWindow, map.getCenter());
-        },
-        );
-        } else {
-        // Browser doesn't support Geolocation
-        handleLocationError(false, infoWindow, map.getCenter());
-        }
-        });
-
-    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(
-        browserHasGeolocation
-        ? "Error: The Geolocation service failed."
-        : "Error: Your browser doesn't support geolocation.",
-        );
-        infoWindow.open(map);
-    }
-
-    </script>
+    <script src="dispMap.js"></script>
 
   </body>
 </html>
