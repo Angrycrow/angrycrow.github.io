@@ -1,9 +1,0 @@
-{
-  "devDependencies": {
-    "@types/googlemaps": "^3.43.3"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "handlebars": "^4.7.8"
-  }
-}
