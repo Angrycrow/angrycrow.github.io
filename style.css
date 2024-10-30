@@ -24,6 +24,7 @@ body{
   animation-duration: 1.5s; 
   animation-iteration-count: 1; 
   animation-timing-function: ease-out;
+  align-items: center;
 }
 
 div.contact{
