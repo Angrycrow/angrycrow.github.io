@@ -32,9 +32,9 @@ div.contact{
   padding-bottom: 1rem;
 }
 a.contact{
-  padding: 5%;
-  margin: 1rem;
-  line-height: 1rem;
+  padding: 0%;
+  margin: 3rem;
+  line-height: 3rem;
 }
 
 a:link{
